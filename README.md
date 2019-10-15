@@ -1,5 +1,7 @@
 # README
 
+REMINDER TO MYSELF: start instead of origin.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
