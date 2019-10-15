@@ -42,6 +42,6 @@ class ShowdownsController < ApplicationController
     end
     
     def showdown_params
-        params.permit(:name, :description)
+        params.permit(:place, :fighter1_id, :fighter2_id, :winner, :loser, :movesused1, :movesused2, :special1used, :special2used, :timer)
     end     
 end
