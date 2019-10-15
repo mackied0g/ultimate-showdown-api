@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place: MyString
+  fighter1_id: 1
+  fighter2_id: 1
+  winner: MyString
+  loser: MyString
+  movesused1: MyString
+  movesused2: MyString
+  special1used: false
+  special2used: false
+  timer: 1
+
+two:
+  place: MyString
+  fighter1_id: 1
+  fighter2_id: 1
+  winner: MyString
+  loser: MyString
+  movesused1: MyString
+  movesused2: MyString
+  special1used: false
+  special2used: false
+  timer: 1
