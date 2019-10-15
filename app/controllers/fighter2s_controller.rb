@@ -42,6 +42,6 @@ class Fighter2sController < ApplicationController
     end
     
     def fighter2_params
-        params.permit(:name, :description)
+        params.permit(:name, :popculture, :health, :defense, :offense, :moveblock1, :moveblock2, :move1, :move2, :move3, :specialmove)
     end     
 end
