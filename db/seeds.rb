@@ -25,6 +25,9 @@ gretathurnberg = Fighter2.create(name: "Greta Thurnberg", health: 100, defense: 
 gordon = Fighter2.create(name: "Gordon Ramsey", health: 100, defense: 89, offense: 18, moveblock1: "Tinky Winky hid in his purse!", moveblock2: "Tinky Winky hugged his enemy, and decreased their offense by 40 points!", move1: "Tinky Tinky hit his foe with his bag!", move2: "Tinky Winky bear hugged his opponent!", move3: "Tinky Winky sang and made his enemy deaf!", specialmove: "The Windmill turned on Tinky Winky's teletummy... Tinky Winky is OP!")
 elon = Fighter2.create(name: "Elon Musk", health: 100, defense: 89, offense: 18, moveblock1: "Tinky Winky hid in his purse!", moveblock2: "Tinky Winky hugged his enemy, and decreased their offense by 40 points!", move1: "Tinky Tinky hit his foe with his bag!", move2: "Tinky Winky bear hugged his opponent!", move3: "Tinky Winky sang and made his enemy deaf!", specialmove: "The Windmill turned on Tinky Winky's teletummy... Tinky Winky is OP!")
 
+# ------------------------------ SHOWDOWNS --------------------------------------------
+# ------------------------------ SHOWDOWNS --------------------------------------------
+# ------------------------------ SHOWDOWNS --------------------------------------------
 
 # Showdowns of Bob Ross
 bobgrandcentralterminal = Showdown.create(place: "Grand Central Terminal", fighter1: bobross, fighter2: tupac, winner: " !", loser: "!", movesused1: "1, 2, 3, 4, 5", movesused2: "1, 3, 2, 2, 6", timer: 2)
