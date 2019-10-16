@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :specials
   resources :showdowns
   resources :blocks
   resources :moves

@@ -2,47 +2,138 @@
 bob = Fighter.create(name: "Bob Ross", health: 100, offense: 71, defense: 54, isalive: true)
 nic = Fighter.create(name: "Nicolas Cage", health: 100, offense: 71, defense: 54, isalive: true)
 thing = Fighter.create(name: "that thing from The Shape of Water", health: 100, offense: 71, defense: 54, isalive: true)
-melania = Fighter.create(name: "Melania Trump", health: 100, offense: 71, defense: 54, isalive: true)
 peppa = Fighter.create(name: "Peppa Pig", health: 100, offense: 71, defense: 54, isalive: true)
-toby = Fighter.create(name: "Toby Flenderson", health: 100, offense: 71, defense: 54, isalive: true)
 jack = Fighter.create(name: "Jack Black", health: 100, offense: 71, defense: 54, isalive: true)
-octavia = Fighter.create(name: "Octavia Spencer", health: 100, offense: 71, defense: 54, isalive: true)
-lucky = Fighter.create(name: "Lucky Leprechaun", health: 100, offense: 71, defense: 54, isalive: true)
-tinky = Fighter.create(name: "Tinky Winky", health: 100, offense: 71, defense: 54, isalive: true)
-tupac = Fighter.create(name: "Tupac Shakur", health: 100, offense: 71, defense: 54, isalive: true)
-lin = Fighter.create(name: "Lin Manuel Miranda", health: 100, offense: 71, defense: 54, isalive: true)
-rachel = Fighter.create(name: "Rachel Ray", health: 100, offense: 71, defense: 54, isalive: true)
-duo = Fighter.create(name: "Duolingo Owl", health: 100, offense: 71, defense: 54, isalive: true)
-shakira = Fighter.create(name: "Shakira", health: 100, offense: 71, defense: 54, isalive: true)
-johntravolta = Fighter.create(name: "John Travolta", health: 100, offense: 71, defense: 54, isalive: true)
-jimmy = Fighter.create(name: "Jimmy Buffet", health: 100, offense: 71, defense: 54, isalive: true)
-melvin = Fighter.create(name: "Melvin from Madagascar", health: 100, offense: 71, defense: 54, isalive: true)
-stephen = Fighter.create(name: "Stephen King", health: 100, offense: 71, defense: 54, isalive: true)
-greta = Fighter.create(name: "Greta Thurnberg", health: 100, offense: 71, defense: 54, isalive: true)
-gordon = Fighter.create(name: "Gordon Ramsey", health: 100, offense: 71, defense: 54, isalive: true)
-elon = Fighter.create(name: "Elon Musk", health: 100, offense: 71, defense: 54, isalive: true)
-doughboy = Fighter.create(name: "Pilsbury Doughboy", health: 100, offense: 71, defense: 54, isalive: true)
-mrbill = Fighter.create(name: "Mr. Bill", health: 100, offense: 71, defense: 54, isalive: true)
-negascott = Fighter.create(name: "Nega Scott Pilgrim", health: 100, offense: 71, defense: 54, isalive: true)
-hotduck = Fighter.create(name: "Hot Duck", health: 100, offense: 71, defense: 54, isalive: true)
-hermey = Fighter.create(name: "Hermey the Dentist", health: 100, offense: 71, defense: 54, isalive: true)
-rms = Fighter.create(name: "Richard Stallman", health: 100, offense: 71, defense: 54, isalive: true)
-remy = Fighter.create(name: "Remy the Rat", health: 100, offense: 71, defense: 54, isalive: true)
-papa = Fighter.create(name: "Papa Smurf", health: 100, offense: 71, defense: 54, isalive: true)
-koolaid = Fighter.create(name: "The Kool Aid Man", health: 100, offense: 71, defense: 54, isalive: true)
-lamp = Fighter.create(name: "The PIXAR Lamp", health: 100, offense: 71, defense: 54, isalive: true)
-fred = Fighter.create(name: "Fred Flintstone", health: 100, offense: 71, defense: 54, isalive: true)
-oscar = Fighter.create(name: "Oscar the Grouch", health: 100, offense: 71, defense: 54, isalive: true)
-smokey = Fighter.create(name: "Smokey Bear", health: 100, offense: 71, defense: 54, isalive: true)
-wes = Fighter.create(name: "Wes Andersen", health: 100, offense: 71, defense: 54, isalive: true)
-olsens = Fighter.create(name: "The Olsen Twins", health: 100, offense: 71, defense: 54, isalive: true)
-hoda = Fighter.create(name: "Hoda Kotb", health: 100, offense: 71, defense: 54, isalive: true)
-medium = Fighter.create(name: "The Long Island Medium", health: 100, offense: 71, defense: 54, isalive: true)
-oz = Fighter.create(name: "Dr. Oz", health: 100, offense: 41, defense: 94, isalive: true)
-bowie = Fighter.create(name: "David Bowie", health: 100, offense: 71, defense: 54, isalive: true)
+# tinky = Fighter.create(name: "Tinky Winky", health: 100, offense: 71, defense: 54, isalive: true)
+# lin = Fighter.create(name: "Lin Manuel Miranda", health: 100, offense: 71, defense: 54, isalive: true)
+# duo = Fighter.create(name: "Duolingo Owl", health: 100, offense: 71, defense: 54, isalive: true)
+# johntravolta = Fighter.create(name: "John Travolta", health: 100, offense: 71, defense: 54, isalive: true)
+# jimmy = Fighter.create(name: "Jimmy Buffet", health: 100, offense: 71, defense: 54, isalive: true)
+# melvin = Fighter.create(name: "Melvin the Giraffe from Madagascar", health: 100, offense: 71, defense: 54, isalive: true)
+# stephen = Fighter.create(name: "Stephen King", health: 100, offense: 71, defense: 54, isalive: true)
+# greta = Fighter.create(name: "Greta Thurnberg", health: 100, offense: 71, defense: 54, isalive: true)
+# gordon = Fighter.create(name: "Gordon Ramsey", health: 100, offense: 71, defense: 54, isalive: true)
+# hermey = Fighter.create(name: "Hermey the Dentist", health: 100, offense: 71, defense: 54, isalive: true)
+# lamp = Fighter.create(name: "The PIXAR Lamp", health: 100, offense: 71, defense: 54, isalive: true)
+# oz = Fighter.create(name: "Dr. Oz", health: 100, offense: 41, defense: 94, isalive: true)
+# patrick star
+# ------------------------------ MOVES --------------------------------------------
+bob1 = Move.create(description: "Bob Ross hit his foe on the brush rack!", fighter_id: bob.id, intensity: 38)
+bob2 = Move.create(description: "Bob Ross threw his foe to the top of his happy little tree!", fighter_id: bob.id, intensity: 26)
+bob3 = Move.create(description: "Bob Ross stabbed his foe 's eye with a paint brush!", fighter_id: bob.id, intensity: 19)
 
+nic1 = Move.create(description: "Nicolas Cage eats his foe's stinking soul!", fighter_id: nic.id, intensity: 87)
+nic2 = Move.create(description: "I'M A VAMPIRE! I'M A VAMPIRE! I'M A VAMPIRE!", fighter_id: nic.id, intensity: 31)
+nic3 = Move.create(description: "Nicolas Cage put his bee helmet on his foe!", fighter_id: nic.id, intensity: 31)
 
-# ------------------------------ SHOWDOWNS --------------------------------------------
+thing1 = Move.create(description: "that thing from The Shape of Water dragged its foe underwater!" fighter_id: thing.id, intensity: 36)
+thing2 = Move.create(description: "thing2move", fighter_id: thing.id, intensity: 54)
+thing3 = Move.create(description: "thing3move", fighter_id: thing.id, intensity: 32)
+
+peppa1 = Move.create(description: "peppa1move", fighter_id: peppa.id, intensity: 21)
+peppa2 = Move.create(description: "peppa2move", fighter_id: peppa.id, intensity: 42)
+peppa3 = Move.create(description: "peppa3move", fighter_id: peppa.id, intensity: 12)
+
+jack1 = Move.create(description: "jack1move", fighter_id: jack.id, intensity: 45)
+jack2 = Move.create(description: "jack2move", fighter_id: jack.id, intensity: 68)
+jack3 = Move.create(description: "jack3move", fighter_id: jack.id, intensity: 13)
+
+# lucky1
+# lucky2
+# lucky3
+
+# tinky1
+# tinky2
+# tinky3
+
+# tupac1
+# tupac2
+# tupac3
+
+# lin1
+# lin2
+# lin3
+
+# duo1
+# duo2
+# duo3
+
+# shakira1
+# shakira2
+# shakira3
+
+# johntravolta1
+# johntravolta2
+# johntravolta3
+
+# jimmy1
+# jimmy2
+# jimmy3
+
+# melvin1
+# melvin2
+# melvin3
+
+# stephen1
+# stephen2
+# stephen3
+
+# greta1
+# greta2
+# greta3
+
+# gordon1
+# gordon2
+# gordon3
+
+# elon1
+# elon2
+# elon3
+
+# doughboy1
+# doughboy2
+# doughboy3
+
+# mrbill1
+# mrbill2
+# mrbill3
+
+# hermey1
+# hermey2
+# hermey3
+
+# rms1
+# rms2
+# rms3
+
+# remy1
+# remy2
+# remy3
+
+# lamp1
+# lamp2
+# lamp3
+
+# fred1
+# fred2
+# fred3
+
+# oscar1
+# oscar2
+# oscar3
+
+# medium1
+# medium2
+# medium3
+
+# oz1
+# oz2
+# oz3
+
+# bowie1
+# bowie2
+# bowie3
+
 # ------------------------------ SHOWDOWNS --------------------------------------------
 # ------------------------------ SHOWDOWNS --------------------------------------------
 
