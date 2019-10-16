@@ -10,7 +10,7 @@ class ShowdownsController < ApplicationController
 
 
     def show
-        render(json: @showdown, include: :losts)
+        render(json: @showdown, include: :fighter1_id, :fighter2_id)
     end
 
     def create

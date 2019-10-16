@@ -10,7 +10,7 @@ class MovesController < ApplicationController
 
 
     def show
-        render(json: @move, include: :losts)
+        render(json: @move, include: :fighter1_id, :fighter2_id)
     end
 
     def create
