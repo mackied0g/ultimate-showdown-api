@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Fighter1sControllerTest < ActionDispatch::IntegrationTest
+class BlockTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

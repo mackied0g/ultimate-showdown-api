@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Fighter2Test < ActiveSupport::TestCase
+class MoveTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
