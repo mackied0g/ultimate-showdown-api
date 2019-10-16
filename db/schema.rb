@@ -10,54 +10,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_15_205500) do
+ActiveRecord::Schema.define(version: 2019_10_16_143100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "fighter1s", force: :cascade do |t|
-    t.string "name"
-    t.string "popculture"
-    t.integer "health"
-    t.integer "defense"
-    t.integer "offense"
-    t.string "moveblock1"
-    t.string "moveblock2"
-    t.string "move1"
-    t.string "move2"
-    t.string "move3"
-    t.string "specialmove"
+  create_table "blocks", force: :cascade do |t|
+    t.string "description"
+    t.integer "fighter1_id"
+    t.integer "fighter2_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "fighter2s", force: :cascade do |t|
+  create_table "fighters", force: :cascade do |t|
     t.string "name"
-    t.string "popculture"
     t.integer "health"
-    t.integer "defense"
     t.integer "offense"
-    t.string "moveblock1"
-    t.string "moveblock2"
-    t.string "move1"
-    t.string "move2"
-    t.string "move3"
-    t.string "specialmove"
+    t.integer "defense"
+    t.boolean "isalive"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "moves", force: :cascade do |t|
+    t.string "description"
+    t.integer "fighter1_id"
+    t.integer "fighter2_id"
+    t.integer "intensity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "showdowns", force: :cascade do |t|
-    t.string "place"
-    t.integer "fighter1_id"
-    t.integer "fighter2_id"
+    t.string "location"
+    t.string "fighter1_id"
+    t.string "fighter2_id"
     t.string "winner"
-    t.string "loser"
-    t.string "movesused1"
-    t.string "movesused2"
-    t.boolean "special1used"
-    t.boolean "special2used"
-    t.integer "timer"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
