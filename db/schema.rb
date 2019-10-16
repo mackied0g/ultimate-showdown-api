@@ -17,8 +17,7 @@ ActiveRecord::Schema.define(version: 2019_10_16_143100) do
 
   create_table "blocks", force: :cascade do |t|
     t.string "description"
-    t.integer "fighter1_id"
-    t.integer "fighter2_id"
+    t.integer "fighter_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -35,8 +34,7 @@ ActiveRecord::Schema.define(version: 2019_10_16_143100) do
 
   create_table "moves", force: :cascade do |t|
     t.string "description"
-    t.integer "fighter1_id"
-    t.integer "fighter2_id"
+    t.integer "fighter_id"
     t.integer "intensity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
