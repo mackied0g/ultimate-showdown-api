@@ -1,6 +1,6 @@
-class CreateSpecials < ActiveRecord::Migration[6.0]
+class CreateSpecialmoves < ActiveRecord::Migration[6.0]
   def change
-    create_table :specials do |t|
+    create_table :specialmoves do |t|
       t.string :description
       t.integer :intensity
 

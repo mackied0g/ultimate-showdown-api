@@ -1,6 +1,7 @@
 class Fighter < ApplicationRecord
     has_many :blocks
     has_many :moves
+    has_one :specialmove
     has_many :showdowns
     has_many :users, through: :showdowns
 
