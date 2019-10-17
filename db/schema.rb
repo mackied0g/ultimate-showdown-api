@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_16_143100) do
+ActiveRecord::Schema.define(version: 2019_10_17_114134) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "blocks", force: :cascade do |t|
     t.string "description"
+    t.integer "intensity"
     t.integer "fighter_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -45,6 +46,14 @@ ActiveRecord::Schema.define(version: 2019_10_16_143100) do
     t.string "fighter1_id"
     t.string "fighter2_id"
     t.string "winner"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "specialmoves", force: :cascade do |t|
+    t.string "description"
+    t.integer "intensity"
+    t.integer "fighter_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

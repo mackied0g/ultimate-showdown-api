@@ -22,10 +22,10 @@ class MovesController < ApplicationController
             end
     end
 
-    def destroy
-        @move.destroy
-        render json: {message: "Move deleted."}
-    end
+    # def destroy
+    #     @move.destroy
+    #     render json: {message: "Move deleted."}
+    # end
 
     def update
         if @move.update(move_params)
@@ -44,7 +44,7 @@ class MovesController < ApplicationController
     end
 
     def move_params
-        params.permit(:description, :fighter1_id, :fighter2_id, :intensity)
+        params.permit(:description, :fighter_id, :intensity)
     end     
 
 end

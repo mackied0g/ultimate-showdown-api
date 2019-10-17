@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SpecialsControllerTest < ActionDispatch::IntegrationTest
+class SpecialmoveTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
