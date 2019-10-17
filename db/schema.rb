@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_114134) do
 
   create_table "blocks", force: :cascade do |t|
     t.string "description"
+    t.integer "intensity"
     t.integer "fighter_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -52,6 +53,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_114134) do
   create_table "specialmoves", force: :cascade do |t|
     t.string "description"
     t.integer "intensity"
+    t.integer "fighter_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

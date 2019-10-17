@@ -3,7 +3,7 @@ class CreateSpecialmoves < ActiveRecord::Migration[6.0]
     create_table :specialmoves do |t|
       t.string :description
       t.integer :intensity
-
+      t.integer :fighter_id
       t.timestamps
     end
   end

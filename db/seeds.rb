@@ -23,32 +23,40 @@ peppa = Fighter.create(name: "Peppa Pig", health: 100, offense: 70, defense: 32,
 bob1 = Move.create(description: "Bob Ross hit his foe on the brush rack!", fighter_id: bob.id, intensity: 38)
 bob2 = Move.create(description: "Bob Ross threw his foe to the top of his happy little tree!", fighter_id: bob.id, intensity: 26)
 bob3 = Move.create(description: "Bob Ross stabbed his foe 's eye with a paint brush!", fighter_id: bob.id, intensity: 19)
-bobb1 = 
-bobb2 = 
-bobspecial = 
+bobb1 = Block.create(description: "bobblock1", intensity: -21, fighter_id: bob.id)
+bobb2 = Block.create(description: "bobblock2", intensity: -19, fighter_id: bob.id)
+bobspecial = Specialmove.create(description: "bobspecial", intensity: 72, fighter_id: bob.id)
 
 
 nic1 = Move.create(description: "Nicolas Cage eats his foe's stinking soul!", fighter_id: nic.id, intensity: 87)
 nic2 = Move.create(description: "I'M A VAMPIRE! I'M A VAMPIRE! I'M A VAMPIRE!", fighter_id: nic.id, intensity: 31)
 nic3 = Move.create(description: "Nicolas Cage put his bee helmet on his foe!", fighter_id: nic.id, intensity: 31)
-nicb1
-nicb2
-nicspecial = 
+nicb1 = Block.create(description: "nicblock1", fighter_id: nic.id, intensity: -32)
+nicb2 = Block.create(description: "nicblock2", fighter_id: nic.id, intensity: -11)
+nicspecial = Specialmove.create(description: "nicspecial", intensity: 71, fighter_id: nic.id)
 
 
 thing1 = Move.create(description: "that thing from The Shape of Water dragged its foe underwater!" fighter_id: thing.id, intensity: 36)
 thing2 = Move.create(description: "thing2move", fighter_id: thing.id, intensity: 54)
 thing3 = Move.create(description: "thing3move", fighter_id: thing.id, intensity: 32)
-thingb1
-thingb2
-thingspecial
+thingb1 = Block.create(description: "thing1block", fighter_id: thing.id, intensity: -21)
+thingb2 = Block.create(description: "thing2block", fighter_id: thing.id, intensity: -11)
+thingspecial = Specialmove.create(description: "thing special move", fighter_id: thing.id)
 
 peppa1 = Move.create(description: "peppa1move", fighter_id: peppa.id, intensity: 21)
 peppa2 = Move.create(description: "peppa2move", fighter_id: peppa.id, intensity: 42)
 peppa3 = Move.create(description: "peppa3move", fighter_id: peppa.id, intensity: 12)
-peppab1
-peppab2
-peppaspecial = 
+peppab1 = Block.create(description: "peppa1block", fighter_id: peppa.id, intensity: -13)
+peppab2 = Block.create(description: "peppa2block", fighter_id: peppa.id, intensity: -45)
+peppaspecial = Specialmove.create(description: "peppaspecial", intensity: 87, fighter_id: peppa.id)
+
+
+peppathing = Showdown.create(location: "Brookhaven Labs", fighter1_id: peppa.id, fighter2_id: thing.id, winner: "guess")
+peppanic = Showdown.create(location: "Brookhaven Labs", fighter1_id: peppa.id, fighter2_id: nic.id, winner: "guess")
+peppabob = Showdown.create(location: "Brookhaven Labs", fighter1_id: peppa.id, fighter2_id: bob.id, winner: "guess")
+peppapeppa = Showdown.create(location: "Brookhaven Labs", fighter1_id: peppa.id, fighter2_id: peppa.id, winner: "guess")
+# thingthing = Showdown.create(location: "Brookhaven Labs", fighter1_id: thing.id, fighter2_id: thing.id, winner: "guess")
+# peppathing = Showdown.create(location: "Brookhaven Labs", fighter1_id: peppa.id, fighter2_id: thing.id, winner: "guess")
 
 # jack1 = Move.create(description: "jack1move", fighter_id: jack.id, intensity: 45)
 # jack2 = Move.create(description: "jack2move", fighter_id: jack.id, intensity: 68)
