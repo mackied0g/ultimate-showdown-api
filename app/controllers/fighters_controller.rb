@@ -1,6 +1,6 @@
 class FightersController < ApplicationController
 
-    before_action :set_fighter, only: [:show, :update, :destroy]
+    before_action :set_fighter, only: [:show, :update]#, :destroy
 
     # GET /fighters
     def index
@@ -22,10 +22,10 @@ class FightersController < ApplicationController
             end
     end
 
-    def destroy
-        @fighter.destroy
-        render json: {message: "Fighter deleted."}
-    end
+    # def destroy
+    #     @fighter.destroy
+    #     render json: {message: "Fighter deleted."}
+    # end
 
     def update
         if @fighter.update(fighter_params)

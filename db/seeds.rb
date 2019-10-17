@@ -10,6 +10,7 @@ peppa = Fighter.create(name: "Peppa Pig", health: 100, offense: 70, defense: 32,
 # duo = Fighter.create(name: "Duolingo Owl", health: 100, offense: 71, defense: 54, isalive: true)
 # johntravolta = Fighter.create(name: "John Travolta", health: 100, offense: 71, defense: 54, isalive: true)
 # jimmy = Fighter.create(name: "Jimmy Buffet", health: 100, offense: 71, defense: 54, isalive: true)
+# jimmyFALLON = Fighter.create(name: "Jimmy Buffet", health: 100, offense: 71, defense: 54, isalive: true)
 # melvin = Fighter.create(name: "Melvin the Giraffe from Madagascar", health: 100, offense: 71, defense: 54, isalive: true)
 # stephen = Fighter.create(name: "Stephen King", health: 100, offense: 71, defense: 54, isalive: true)
 # greta = Fighter.create(name: "Greta Thurnberg", health: 100, offense: 71, defense: 54, isalive: true)
