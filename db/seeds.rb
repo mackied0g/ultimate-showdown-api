@@ -1,9 +1,10 @@
 #Fighters
 bob = Fighter.create(name: "Bob Ross", health: 100, offense: 71, defense: 54, isalive: true)
-nic = Fighter.create(name: "Nicolas Cage", health: 100, offense: 71, defense: 54, isalive: true)
-thing = Fighter.create(name: "that thing from The Shape of Water", health: 100, offense: 71, defense: 54, isalive: true)
-peppa = Fighter.create(name: "Peppa Pig", health: 100, offense: 71, defense: 54, isalive: true)
-jack = Fighter.create(name: "Jack Black", health: 100, offense: 71, defense: 54, isalive: true)
+nic = Fighter.create(name: "Nicolas Cage", health: 100, offense: 63, defense: 46, isalive: true)
+thing = Fighter.create(name: "that thing from The Shape of Water", health: 100, offense: 88, defense: 22, isalive: true)
+peppa = Fighter.create(name: "Peppa Pig", health: 100, offense: 70, defense: 32, isalive: true)
+
+# jack = Fighter.create(name: "Jack Black", health: 100, offense: 71, defense: 54, isalive: true)
 # tinky = Fighter.create(name: "Tinky Winky", health: 100, offense: 71, defense: 54, isalive: true)
 # lin = Fighter.create(name: "Lin Manuel Miranda", health: 100, offense: 71, defense: 54, isalive: true)
 # duo = Fighter.create(name: "Duolingo Owl", health: 100, offense: 71, defense: 54, isalive: true)
@@ -16,7 +17,8 @@ jack = Fighter.create(name: "Jack Black", health: 100, offense: 71, defense: 54,
 # hermey = Fighter.create(name: "Hermey the Dentist", health: 100, offense: 71, defense: 54, isalive: true)
 # lamp = Fighter.create(name: "The PIXAR Lamp", health: 100, offense: 71, defense: 54, isalive: true)
 # oz = Fighter.create(name: "Dr. Oz", health: 100, offense: 41, defense: 94, isalive: true)
-# patrick star
+# aunt jemima
+# bluemangroup
 # ------------------------------ MOVES --------------------------------------------
 bob1 = Move.create(description: "Bob Ross hit his foe on the brush rack!", fighter_id: bob.id, intensity: 38)
 bob2 = Move.create(description: "Bob Ross threw his foe to the top of his happy little tree!", fighter_id: bob.id, intensity: 26)
